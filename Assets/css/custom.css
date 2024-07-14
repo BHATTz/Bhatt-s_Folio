@@ -1,0 +1,84 @@
+body {
+  background-color: rgb(17 24 39);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#role {
+  animation: fadeIn 1s ease-in-out;
+  transition: opacity 0.5s;
+}
+button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+  background-color: #fcd34d; /* Change to the specific yellow shade */
+  transform: scale(1.05); /* Slightly increase size on hover */
+  color: black;
+}
+.sdm-font-semibold {
+  font-weight: 600;
+  color: rgb(0 0 0);
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+p#role {
+  color: rgb(234 179 8);
+}
+.skill-item {
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+.skill-item:hover {
+  transform: translateY(-10px);
+  background-color: #4a5568; /* Darker gray for hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.experience-item {
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+.experience-item:hover {
+  transform: translateY(-10px);
+  background-color: #4a556800; /* Darker gray for hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.experience-item h2 {
+  transition: color 0.3s;
+}
+.experience-item:hover h2 {
+  color: #ffd700; /* Change text color on hover */
+}
+.experience-item a {
+  transition: color 0.3s;
+}
+.experience-item:hover a {
+  color: #ff4500; /* Change link color on hover */
+}
+.underline {
+  text-decoration: underline;
+}
+.underline-offset-2 {
+  text-decoration-color: rgb(234 179 8);
+  text-underline-offset: 14px;
+  text-decoration-thickness: 2px;
+}
+
+@media (max-width: 640px) {
+  /* Mobile breakpoint */
+  .skill-item {
+    justify-content: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+  }
+}
