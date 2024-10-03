@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./Bhatt'sFolio/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        mono: ["Cascadia Code", "monospace"],
+      },
+    },
   },
   plugins: [],
 };
